@@ -1,5 +1,0 @@
-- name: 'BrowserStack Env Setup'
-        uses: 'browserstack/github-actions/setup-env@master'
-        with:
-          username:  ${{ secrets.USERNAME }}
-          access-key: ${{ secrets.ACCESS_KEY }}
