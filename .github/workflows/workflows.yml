@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest  # Can be self-hosted runner also
     steps:
       - name: 'BrowserStack Env Setup'  # Invokes the setup-env action
-        uses: browserstack/github-actions/setup-env@master
+        uses: ./.github/actions/setup-env.yml
         with:
           username:  ${{ secrets.USERNAME }}
           access-key: ${{ secrets.ACCESS_KEY }}
       - name: 'BrowserStack Local Tunnel Setup'  # Invokes the setup-local action
-        uses: browserstack/github-actions/setup-local@master
+        uses: ./.github/actions/setup-local.yml
         with:
           local-testing: start
           local-identifier: random
