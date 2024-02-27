@@ -1,0 +1,4 @@
+- name: 'Stop BrowserStackLocal'
+    uses: 'browserstack/github-actions/setup-local@master'
+    with:
+      local-testing: 'stop'
